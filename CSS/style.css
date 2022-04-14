@@ -1,0 +1,454 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+#header{
+	background: url(../img/boxer.jpg) no-repeat; 
+	height: 90vh;
+	background-size: cover;
+	background-position: center;
+}
+.navbar-nav li a{
+	float: right;
+	color: white !important;
+}
+.navbar-brand{
+	font-size: 26px;
+	width: 150px;
+	margin-left: 30px;
+	font-family: 'Sirin Stencil', cursive;
+}
+.navbar-toggler{
+	border: none !important;
+	outline: none;
+}
+nav .fa-bars{
+	color: white !important;
+	font-size: 26px;
+}
+
+	/*welcome*/
+
+.welcome{
+	padding: 50px 100px;
+	margin-top: -140px;
+	background-color: white;
+	box-shadow: 0 0 20px 7px rgba(0,0,0,0.2);
+}
+.welcome h1{
+	font-weight: 600;
+	color: #333;
+}
+.welcome .home-btn{
+	margin-top: 10px;
+	padding: 10px 30px;
+	 border-radius: 30px;
+	 color: white;
+	 background-color: #013f7e;
+	 font-weight: bold;
+}
+.welcome .btn:focus{
+	box-shadow: none;
+}
+
+	/*about us */
+#about{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+#about .col-md-6{
+	padding: 20px 10px;
+}
+#about h3{
+	font-weight: 600;
+	margin: 20px auto;
+}
+
+/*Product carousel area*/
+
+#Mycarousel{
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+#Mycarousel h1{
+	font-weight: 700;
+	margin-bottom: 40px;
+	color: #013f7e;
+}
+#Mycarousel .card{
+	background: linear-gradient(180deg, #04F0FF 0%, #07ADE1 100%);
+	box-shadow: 6px 10px 10px #E3ECEF;
+	border-radius: 15px;
+}
+#Mycarousel .card .btn{
+	background: transparent;
+	border: 1px solid #04F0FF;
+	color: white;
+	margin-top: 10px;
+	margin-left: 25px;
+}
+#Mycarousel .card .btn:hover{
+	border: 1px solid white;
+}
+
+.carousel-cell {
+  width: 200px;
+  height: 400px;
+  margin-right: 15px;
+  counter-increment: carousel-cell;
+}
+.flickity-page-dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+    background: cyan;
+    border-radius: 50%;
+    opacity: .25;
+    cursor: pointer;
+}
+
+.card .face{
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	background: black;
+	transition: 1s ease-in-out;
+	backface-visibility: hidden;
+	transform: perspective(500px) rotateY(0deg);
+}
+.card:hover .face.front{
+	transform: perspective(500px) rotateY(180deg);
+}
+.card .face.front{
+	background: transparent;
+}
+.card .face.front img{
+	margin-top: 11px !important;
+	margin-left: 11px !important;
+}
+.card .face.back img{
+	margin-top: 57px !important;
+    padding-bottom: 30px !important;
+    margin-left: 28px !important;
+}
+.card .face.back{
+	margin-top: -400px;
+	background:transparent;
+	transform: perspective(500px) rotateY(180deg);
+}
+.card:hover .face.back{
+	transform: perspective(500px) rotateY(360deg);
+}
+
+/*SERVICES*/
+#services{
+	background-color: #efefef;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+#services .col-md-4{
+	padding: 20px;
+}
+#services .col-md-4 h4{
+	font-weight: 600;
+	text-align: center;
+	padding: 5px;
+}
+#services .col-md-4 img{
+	width: 50px !important;
+}
+#services .col-md-4 p{
+	padding: 5px;
+	text-align: justify;
+}
+
+	/*features*/
+#features{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../img/trainer background.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+}
+#features .col-md-6{
+	padding: 20px;
+}
+#features .col-md-6 img{
+	width: 50%;
+	height: 80%;
+}
+.feature-box{
+	height: 120px;
+}
+.feature-box .feature-left{
+	width: 20%;
+	height: 120px;
+	float: left;
+}
+.feature-box .feature-left .fa{
+	padding-top: 13px;
+	font-size: 50px;
+}
+.feature-box .feature-right{
+	width: 80%;
+	height: 120px;
+	float: left;
+}
+.feature-box .feature-right h4{
+	font-weight: 600;
+	padding-top: 10px;
+	padding-left: 15px;
+	text-align: center;
+}
+.feature-box .feature-right p{
+	padding-left: 15px;
+	text-align: left;
+}
+
+/*TESTIMONIAL*/
+#testimonial{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+#testimonial h1{
+	font-weight: 700;
+	margin-bottom: 20px;
+	color: #013f7e;
+}
+#testimonial p{
+	margin-bottom: 30px;
+}
+#testimonial .col-md-4{
+	padding: 10px 30px;
+}
+#testimonial img{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	margin-left: -30px;
+	margin-top: -40px;
+	border: 5px solid #fff;
+	margin-bottom: 30px;
+}
+.review{
+	font-size: 16px;
+	padding: 10px 10px 10px 30px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+}
+.review .fa-twitter{
+	color: #013f7e;
+}
+#testimonial span{
+	color: #013f7e;
+	font-weight: 600;
+	font-size: 18px; 
+}
+#testimonial .middle{
+	margin-bottom: 20px;
+	margin-top: -30px;
+}
+
+/*SUBSCRIBE*/
+.subscribe{
+	padding: 50px 30px;
+	background-color: #013f7e;
+	position: relative;
+	box-shadow: 0px 0px 20px 7px rgba(0,0,0,0.2);
+	margin-bottom: -160px;
+}
+.subscribe h3{
+	font-weight: 600;
+}
+.subscribe h3, .subscribe p{
+	color: #fff;
+}
+.subscribe .input-group{
+	border-radius: 30px;
+	background: #fff;
+	max-width: 500px;
+	margin: 10px auto;
+	padding: 5px;
+}
+.subscribe .form-control{
+	border: none;
+	background: transparent;
+}
+.subscribe .form-control:focus{
+	box-shadow: none;
+	background: transparent;
+}
+.subscribe .input-group-append{
+	background: linear-gradient(to right, #1c03b5, #5c8bef);
+	border-radius: 30px;
+}
+.subscribe .input-group-text{
+	background: transparent;
+	border: none;
+	color: #fff;
+}
+.subscribe .btn:focus{
+	box-shadow: none;
+}
+
+/*FOOTER SECTION*/
+#footer{
+	margin-top: 80px;
+	padding: 100px;
+	background: #efefef;
+	color: #013f7e;
+}
+#footer .footer-logo{
+	margin-top: 25px;
+	margin-bottom: 15px;
+	font-size: 26px;
+	font-weight: 600;
+}
+#footer h1{
+	font-weight: 600;
+	font-size: 25px;
+	text-align: left;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+#footer p{
+	font-weight: bold;
+	font-size: 12px;
+	text-align: left;
+}
+#footer .city{
+	margin-left: 37px;
+}
+#footer .col-md-3 .fa{
+	padding-right: 20px;
+	font-size: 15px;
+}
+#footer hr{
+	margin-top: 10px;
+}
+#footer .fa-heart-o{
+	color: red;
+	font-size: 17px;
+}
+#footer .copyrihgt{
+	margin-bottom: -80px;
+	text-align: center;
+	font-size: 15px;
+}
+#footer a{
+	font-family: 'Sirin Stencil', cursive;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/*media query for screen 425px*/
+@media only screen and (max-width: 426px) {
+.welcome {
+    padding: 50px 40px;
+}
+.welcome h1{
+	font-size: 30px;
+	color: #333;
+}
+.welcome p{
+	padding-top: 0;
+}
+.welcome .home-btn{
+	margin-top: 10px;
+	padding: 10p 30px;
+	 border-radius: 30px;
+	 color: white;
+	 background-color: #013f7e;
+}
+.welcome .btn:focus{
+	box-shadow: none;
+}
+#about{
+	padding-top: 0px;
+	padding-bottom: 60px;
+}
+#feature{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+#features .col-md-6 img{
+	margin-left: 80px;
+}
+#testimonial {
+    padding-top: 90px;
+    padding-bottom: 75px;
+}
+#footer {
+    margin-top: 80px;
+    padding: 100px 65px;
+}
+#about .col-md-6 {
+    padding: 20px 35px;
+}
+
+}
+
+/*media query for screen 375px*/
+@media only screen and (max-width: 376px) {
+.feature-box .feature-left .fa {
+    padding-top: 0px;
+    font-size: 40px;
+}
+.feature-box .feature-right {
+    width: 80%;
+    height: 135px;
+    float: left;
+}
+.feature-right h3{
+	font-size: 23px;
+}
+#features{
+	padding-bottom: 55px;
+}
+#testimonial{
+	padding-bottom: 55px;
+}
+#footer{
+	padding: 100px 45px;
+}
+#footer .col-md-3 .fa {
+    padding-right: 12px;
+}
+
+}
+
+/*media query for screen 320px*/
+@media only screen and (max-width: 321px){
+#header{
+	background: url(../img/boxer.jpg) no-repeat; 
+	height: 90vh;
+	background-size: cover;
+	background-position: right;
+}
+.welcome {
+    padding: 50px 15px;
+}
+#about h3 {
+    font-size: 24px;
+}
+.feature-box .feature-left .fa {
+    font-size: 36px;
+}
+#features {
+    padding-bottom: 48px;
+}
+#testimonial h1 {
+    font-size: 35px;
+}
+#Mycarousel h1{
+	font-size: 35px;
+}
+#footer {
+    padding: 100px 21px;
+}
+
+}
